@@ -1,0 +1,41 @@
+.mission {
+  display: flex;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+
+  &__section-picture {
+    background: url("../../images/background-image.png") no-repeat center {
+      size: cover;
+    };
+  }
+
+  &__main {
+    width: 60%;
+
+    padding: 149px 5px 149px 75px;
+    background: #e5e5e5;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      padding: 149px 5px;
+    }
+  }
+
+  &__sub-text {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+
+    @media (max-width: 1100px) {
+      text-align: center;
+    }
+  }
+
+  &__sub-title {
+    margin-bottom: 20px;
+  }
+}
