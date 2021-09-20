@@ -13,9 +13,9 @@ export const About = () => {
   );
   const [links, setLinks] = React.useState(
     [
-      {id: 0, linkSrc: '/icons/chain.svg', linkContent: 'website.com', linkHref: 'google.com',},
-      {id: 1, linkSrc: '/icons/twitter.svg', linkContent: '@companyhandle', linkHref: 'twitter.com',},
-      {id: 2, linkSrc: '/icons/facebook.svg', linkContent: '@handle', linkHref: 'facebook.com',},
+      {id: 0, linkSrc: '/icons/chain.svg', linkContent: 'website.com', linkHref: 'https://google.com',},
+      {id: 1, linkSrc: '/icons/twitter.svg', linkContent: '@companyhandle', linkHref: 'https://twitter.com',},
+      {id: 2, linkSrc: '/icons/facebook.svg', linkContent: '@handle', linkHref: 'https://facebook.com',},
     ]
   );
 
