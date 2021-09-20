@@ -6,7 +6,7 @@ import './SocialLink.scss';
 export const SocialLink = ({ src, content, className, href }) => (
   <div className={ classNames('social-link', className) }>
     <img
-      src={ src }
+      src={process.env.PUBLIC_URL + src}
       alt={ content }
       className='social-link__img'
     />

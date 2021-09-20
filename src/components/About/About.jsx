@@ -4,7 +4,6 @@ import {Title} from "../Title";
 import {Paragraph} from "../Paragraph";
 import {Links} from "../Links";
 import './About.scss';
-import chain from '../../images/chain.svg';
 
 export const About = () => {
   const [title, setTitle] = React.useState('Company Name');
@@ -14,7 +13,7 @@ export const About = () => {
   );
   const [links, setLinks] = React.useState(
     [
-      {id: 0, linkSrc: { chain }, linkContent: 'website.com', linkHref: '#',},
+      {id: 0, linkSrc: '/icons/chain.svg', linkContent: 'website.com', linkHref: '#',},
       {id: 1, linkSrc: '/icons/twitter.svg', linkContent: '@companyhandle', linkHref: '#',},
       {id: 2, linkSrc: '/icons/facebook.svg', linkContent: '@handle', linkHref: '#',},
     ]

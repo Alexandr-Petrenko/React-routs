@@ -5,7 +5,7 @@ import './Employee.scss';
 
 export const Employee = ({ src, name, position, className }) => (
   <div className={classNames('employee', className)}>
-    <img src={ src } alt={ name } className='employee__photo'/>
+    <img src={ process.env.PUBLIC_URL + src } alt={ name } className='employee__photo'/>
     <div className='employee__text'>
       <div className='employee__name'>
         { name }
