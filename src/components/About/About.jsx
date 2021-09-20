@@ -4,7 +4,7 @@ import {Title} from "../Title";
 import {Paragraph} from "../Paragraph";
 import {Links} from "../Links";
 import './About.scss';
-import chain from '../../images/chain.svg.png';
+import chain from '../../images/chain.svg';
 
 export const About = () => {
   const [title, setTitle] = React.useState('Company Name');
