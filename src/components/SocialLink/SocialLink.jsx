@@ -10,7 +10,12 @@ export const SocialLink = ({ src, content, className, href }) => (
       alt={ content }
       className='social-link__img'
     />
-    <a href={ href } className='social-link__anchor'>
+    <a
+      href={ href }
+      className='social-link__anchor'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
       { content }
     </a>
   </div>
