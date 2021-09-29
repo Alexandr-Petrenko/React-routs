@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import './SubTitle.scss';
 
-export const SubTitle = ({ content, className }) => (
+const SubTitle = ({ content, className }) => (
   <h3 className={ classNames('sub-title', className) }>
     { content }
   </h3>
@@ -17,3 +17,5 @@ SubTitle.propTypes = {
 SubTitle.defaultProps = {
   classNames: '',
 };
+
+export {SubTitle};

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import './Paragraph.scss';
+import './_Paragraph.scss';
 
-export const Paragraph = ({ content, className }) => {
+const Paragraph = ({ content, className }) => {
   return (
     <p className={`paragraph ${ className }`}>
       { content }
@@ -18,3 +18,5 @@ Paragraph.propTypes = {
 Paragraph.defaultProps = {
   className: '',
 };
+
+export { Paragraph };

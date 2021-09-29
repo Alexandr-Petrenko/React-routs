@@ -1,1 +1,1 @@
-export * from './SubParagraph';
+export { SubParagraph } from './SubParagraph';

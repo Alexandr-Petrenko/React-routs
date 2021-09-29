@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import './SubParagraph.scss';
+import './_SubParagraph.scss';
 
-export const SubParagraph = ({ content, className }) => (
+const SubParagraph = ({ content, className }) => (
   <p className={ classNames('sub-paragraph', className) }>
     { content }
   </p>
@@ -17,3 +17,5 @@ SubParagraph.propTypes = {
 SubParagraph.defaultProps = {
   classNames: '',
 };
+
+export { SubParagraph };

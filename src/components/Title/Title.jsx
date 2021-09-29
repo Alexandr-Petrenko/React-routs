@@ -1,10 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import './Title.scss';
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from "classnames";
+import './_Title.scss';
 
-export const Title = ({ content, className }) => {
-  return <h2 className={`title ${ className }`}>{ content }</h2>;
-};
+const Title = ({ content, className }) => (
+  <h2 className={ classNames('title', className )}>{ content }</h2>
+);
 
 Title.propTypes = {
   content: PropTypes.string.isRequired,
@@ -14,3 +15,5 @@ Title.propTypes = {
 Title.defaultProps = {
   className: '',
 };
+
+export { Title };

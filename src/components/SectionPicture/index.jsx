@@ -1,1 +1,1 @@
-export * from './SectionPicture';
+export { SectionPicture } from './SectionPicture';

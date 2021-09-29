@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './Employee.scss';
+import './_Employee.scss';
 
-export const Employee = ({ src, name, position, className }) => (
+const Employee = ({ src, name, position, className }) => (
   <div className={classNames('employee', className)}>
     <img src={ process.env.PUBLIC_URL + src } alt={ name } className='employee__photo'/>
     <div className='employee__text'>
@@ -27,3 +27,5 @@ Employee.propTypes = {
 Employee.defaultProps = {
   classNames: '',
 };
+
+export { Employee };

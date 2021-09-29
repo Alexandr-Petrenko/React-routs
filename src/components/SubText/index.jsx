@@ -1,1 +1,1 @@
-export * from './SubText';
+export { SubText } from './SubText';

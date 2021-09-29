@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import './SocialLink.scss';
+import './_SocialLink.scss';
 
-export const SocialLink = ({ src, content, className, href }) => (
+const SocialLink = ({ src, content, className, href }) => (
   <div className={ classNames('social-link', className) }>
     <img
       src={process.env.PUBLIC_URL + src}
@@ -31,3 +31,5 @@ SocialLink.propTypes = {
 SocialLink.defaultProps = {
   classNames: '',
 };
+
+export { SocialLink };

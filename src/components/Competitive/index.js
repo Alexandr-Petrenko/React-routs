@@ -1,0 +1,1 @@
+export { Competitive } from './Competitive';

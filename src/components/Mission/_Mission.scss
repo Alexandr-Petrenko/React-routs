@@ -1,9 +1,4 @@
 .mission {
-  display: flex;
-
-  @media (max-width: 1100px) {
-    flex-direction: column;
-  }
 
   &__section-picture {
     background: url("../../images/background-image.png") no-repeat center {

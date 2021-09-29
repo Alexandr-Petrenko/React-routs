@@ -1,1 +1,1 @@
-export * from './Mission';
+export { Mission } from './Mission';

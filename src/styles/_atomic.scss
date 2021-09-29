@@ -58,6 +58,12 @@ $c-main-bg: #e5e5e5;
 
   .nav__item {
     transition: .5s;
+    font-size: 30px;
+
+
+    @media (max-width: 1150px) {
+      font-size: 20px;
+    }
 
     @media (max-width: 799px) {
       margin-bottom: 30px;
@@ -71,5 +77,13 @@ $c-main-bg: #e5e5e5;
 
   .active {
     color: #b000f2;
+  }
+}
+
+.section-with-picture {
+  display: flex;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
   }
 }
