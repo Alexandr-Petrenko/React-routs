@@ -1,0 +1,37 @@
+.target {
+  height: calc(100vh - 100px);
+
+  &__section-picture {
+    background: url("../../../images/target.png") no-repeat 20% {
+      size: cover;
+    };
+  }
+
+  &__section {
+    width: 60%;
+
+    padding: 149px 0 98px 75px;
+
+    @media (max-width: 1100px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      padding: 150px 5px 0;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 71px;
+  }
+
+  &__sub-text {
+    margin-bottom: 50px;
+    max-width: 450px;
+  }
+
+  &__sub-title {
+    margin-bottom: 20px;
+  }
+}

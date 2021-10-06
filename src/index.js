@@ -4,9 +4,9 @@ import './styles/reset.css';
 import './styles/default.css';
 import './styles/_atomic.scss';
 
-import { App } from "./components/App";
+import { App } from './components/App';
 
-  ReactDOM.render(
-    <App />,
-    document.getElementById('root'),
-  )
+ReactDOM.render(
+  <App />,
+  document.getElementById('root'),
+);
