@@ -10,7 +10,7 @@ import Difference from "./pages/Difference";
 import PageNotFound from "./PageNotFound.jsx";
 
 const ROUTE_CONFIG = [
-  { id: 0, path: "/about", content: About, linkValue: "About" },
+  { id: 0, path: "/", content: About, linkValue: "About" },
   { id: 1, path: "/team", content: Team, linkValue: "Our Team" },
   { id: 2, path: "/mission", content: Mission, linkValue: "Mission" },
   { id: 3, path: "/slogan", content: Slogan, linkValue: "Slogan" },
