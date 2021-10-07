@@ -1,1 +1,3 @@
-export { SectionPicture } from './SectionPicture';
+import SectionPicture from "./SectionPicture.jsx";
+
+export default SectionPicture;

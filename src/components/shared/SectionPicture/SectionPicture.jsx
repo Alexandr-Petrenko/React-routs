@@ -1,9 +1,9 @@
-import classNames from 'classnames';
-import './_SectionPicture.scss';
-import PropTypes from 'prop-types';
+import classNames from "classnames";
+import "./_SectionPicture.scss";
+import PropTypes from "prop-types";
 
 const SectionPicture = ({ className }) => (
-  <div className={classNames('section-picture', className)} />
+  <div className={classNames("section-picture", className)} />
 );
 
 SectionPicture.propTypes = {
@@ -11,7 +11,7 @@ SectionPicture.propTypes = {
 };
 
 SectionPicture.defaultProps = {
-  className: '',
+  className: "",
 };
 
-export { SectionPicture };
+export default SectionPicture;

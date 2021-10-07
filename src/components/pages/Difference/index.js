@@ -1,1 +1,3 @@
-export * from './Difference';
+import Difference from "./Difference.jsx";
+
+export default Difference;

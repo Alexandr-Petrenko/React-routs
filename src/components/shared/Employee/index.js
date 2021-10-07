@@ -1,1 +1,3 @@
-export { Employee } from './Employee';
+import Employee from "./Employee.jsx";
+
+export default Employee;

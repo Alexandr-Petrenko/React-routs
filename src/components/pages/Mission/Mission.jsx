@@ -1,30 +1,32 @@
-import './_Mission.scss';
-import { SectionPicture } from '../../shared/SectionPicture';
-import { Title } from '../../shared/Title';
-import { SubText } from '../../shared/SubText';
+import "./_Mission.scss";
+import SectionPicture from "../../shared/SectionPicture";
+import Title from "../../shared/Title";
+import SubText from "../../shared/SubText.jsx";
 
-const titleContent = 'Our Mission';
+const titleContent = "Our Mission";
 const TEXT_DATA = [
   {
-    subtitle: 'Become the #1 Platform',
-    paragraph: 'There is an opportunity to become the go-to platform for product managers.',
-    titleClass: 'mission__sub-title',
-    paragraphClass: 'mission__sub-paragraph',
+    subtitle: "Become the #1 Platform",
+    paragraph:
+      "There is an opportunity to become the go-to platform for product managers.",
+    titleClass: "mission__sub-title",
+    paragraphClass: "mission__sub-paragraph",
     id: 0,
   },
   {
-    subtitle: 'Create a Great Community',
+    subtitle: "Create a Great Community",
     paragraph: `We want to help others by creating a community 
                 where people can get answers to questions.`,
-    titleClass: 'mission__sub-title',
-    paragraphClass: 'mission__sub-paragraph',
+    titleClass: "mission__sub-title",
+    paragraphClass: "mission__sub-paragraph",
     id: 1,
   },
   {
-    subtitle: 'Lead by Example',
-    paragraph: 'Our goal is to become the industry leader by fostering great relationships.',
-    titleClass: 'mission__sub-title',
-    paragraphClass: 'mission__sub-paragraph',
+    subtitle: "Lead by Example",
+    paragraph:
+      "Our goal is to become the industry leader by fostering great relationships.",
+    titleClass: "mission__sub-title",
+    paragraphClass: "mission__sub-paragraph",
     id: 2,
   },
 ];
@@ -52,4 +54,4 @@ const Mission = () => (
   </section>
 );
 
-export { Mission };
+export default Mission;

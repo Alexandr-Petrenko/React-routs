@@ -1,25 +1,25 @@
-import './_Difference.scss';
-import { Title } from '../../shared/Title';
-import { Benefit } from '../../shared/Benefit';
+import "./_Difference.scss";
+import Title from "../../shared/Title";
+import Benefit from "../../shared/Benefit";
 
 const BENEFIT_CONTENT = [
   {
     id: 0,
-    subTitle: 'Proven Team',
-    subParagraph: 'Founding Team with multiple exits.',
-    url: '/icons/users.png',
+    subTitle: "Proven Team",
+    subParagraph: "Founding Team with multiple exits.",
+    url: "/icons/users.png",
   },
   {
     id: 1,
-    subTitle: 'Market traction',
-    subParagraph: 'Profitable, growing  userbase.',
-    url: '/icons/barchart.png',
+    subTitle: "Market traction",
+    subParagraph: "Profitable, growing  userbase.",
+    url: "/icons/barchart.png",
   },
   {
     id: 2,
-    subTitle: 'Unique tech',
-    subParagraph: 'Innovative technology.',
-    url: '/icons/code.png',
+    subTitle: "Unique tech",
+    subParagraph: "Innovative technology.",
+    url: "/icons/code.png",
   },
 ];
 
@@ -46,4 +46,4 @@ const Difference = () => (
   </section>
 );
 
-export { Difference };
+export default Difference;

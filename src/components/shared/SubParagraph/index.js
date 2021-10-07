@@ -1,1 +1,3 @@
-export { SubParagraph } from './SubParagraph';
+import SubParagraph from "./SubParagraph.jsx";
+
+export default SubParagraph;

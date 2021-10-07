@@ -1,1 +1,3 @@
-export * from './Mission';
+import Mission from "./Mission.jsx";
+
+export default Mission;

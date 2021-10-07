@@ -1,11 +1,19 @@
-import './_Market.scss';
-import { Info } from '../../shared/Info';
+import "./_Market.scss";
+import Info from "../../shared/Info";
 
-const titleContent = 'Marketing strategy';
+const titleContent = "Marketing strategy";
 const SUB_TEXT_CONTENT = [
-  {id: 0, title: 'Advertising', paragraph: 'Reach COOs quickly',},
-  {id: 1, title: 'Organic search', paragraph: 'With a focus on long-tail keywords',},
-  {id: 2, title: 'Content marketing', paragraph: 'Providing useful, niche content',},
+  { id: 0, title: "Advertising", paragraph: "Reach COOs quickly" },
+  {
+    id: 1,
+    title: "Organic search",
+    paragraph: "With a focus on long-tail keywords",
+  },
+  {
+    id: 2,
+    title: "Content marketing",
+    paragraph: "Providing useful, niche content",
+  },
 ];
 
 const Market = () => (
@@ -22,4 +30,4 @@ const Market = () => (
   </section>
 );
 
-export { Market };
+export default Market;
