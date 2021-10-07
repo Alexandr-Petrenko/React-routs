@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React-routs/static/css/main.65764a45.chunk.css",
-    "main.js": "/React-routs/static/js/main.46564b34.chunk.js",
-    "main.js.map": "/React-routs/static/js/main.46564b34.chunk.js.map",
+    "main.js": "/React-routs/static/js/main.eeb6d627.chunk.js",
+    "main.js.map": "/React-routs/static/js/main.eeb6d627.chunk.js.map",
     "runtime-main.js": "/React-routs/static/js/runtime-main.030b112d.js",
     "runtime-main.js.map": "/React-routs/static/js/runtime-main.030b112d.js.map",
-    "static/js/2.87646c25.chunk.js": "/React-routs/static/js/2.87646c25.chunk.js",
-    "static/js/2.87646c25.chunk.js.map": "/React-routs/static/js/2.87646c25.chunk.js.map",
+    "static/js/2.b12a12d4.chunk.js": "/React-routs/static/js/2.b12a12d4.chunk.js",
+    "static/js/2.b12a12d4.chunk.js.map": "/React-routs/static/js/2.b12a12d4.chunk.js.map",
     "index.html": "/React-routs/index.html",
     "static/css/main.65764a45.chunk.css.map": "/React-routs/static/css/main.65764a45.chunk.css.map",
-    "static/js/2.87646c25.chunk.js.LICENSE.txt": "/React-routs/static/js/2.87646c25.chunk.js.LICENSE.txt",
+    "static/js/2.b12a12d4.chunk.js.LICENSE.txt": "/React-routs/static/js/2.b12a12d4.chunk.js.LICENSE.txt",
     "static/media/_Slogan.scss": "/React-routs/static/media/background-image.00d081d1.png",
     "static/media/_About.scss": "/React-routs/static/media/iphone.06c4f874.png",
     "static/media/_Market.scss": "/React-routs/static/media/triangle.df6312bd.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.030b112d.js",
-    "static/js/2.87646c25.chunk.js",
+    "static/js/2.b12a12d4.chunk.js",
     "static/css/main.65764a45.chunk.css",
-    "static/js/main.46564b34.chunk.js"
+    "static/js/main.eeb6d627.chunk.js"
   ]
 }
