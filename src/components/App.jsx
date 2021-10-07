@@ -1,4 +1,4 @@
-import { Route, NavLink, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Mission from "./pages/Mission";
@@ -7,6 +7,7 @@ import Target from "./pages/Target";
 import Competitive from "./pages/Competitive";
 import Market from "./pages/Market";
 import Difference from "./pages/Difference";
+import PageNotFound from "./PageNotFound.jsx";
 
 const ROUTE_CONFIG = [
   { id: 0, path: "/about", content: About, linkValue: "About" },
@@ -25,28 +26,29 @@ const ROUTE_CONFIG = [
 ];
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <nav className="nav">
       <ul className="nav__list">
         {ROUTE_CONFIG.map((config) => {
           const { id, path, linkValue } = config;
 
           return (
-            <NavLink to={path} className="nav__item" key={id}>
+            <Link to={path} className="nav__item" key={id}>
               {linkValue}
-            </NavLink>
+            </Link>
           );
         })}
       </ul>
     </nav>
-    <div className="content">
+    <Switch>
       {ROUTE_CONFIG.map((config) => {
         const { id, path, content } = config;
 
-        return <Route path={path} component={content} key={id} />;
+        return <Route exact path={path} component={content} key={id} />;
       })}
-    </div>
-  </BrowserRouter>
+      <Route component={PageNotFound} />
+    </Switch>
+  </Router>
 );
 
 export default App;
