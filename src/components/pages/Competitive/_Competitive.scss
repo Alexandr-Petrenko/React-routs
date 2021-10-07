@@ -18,6 +18,7 @@
     right: 0;
     bottom: 0;
     z-index: 0;
+    filter: brightness(1.2);
 
     background: url("../../../images/triangle.png") no-repeat center {
       size: 100% 100%;
@@ -46,8 +47,6 @@
   &__title {
     margin-bottom: 70px;
 
-    color: #000;
-
     @media (max-width: 1100px) {
       text-align: center;
     }
@@ -55,12 +54,9 @@
 
   &__sub-title {
     margin-bottom: 25px;
-    color: #000;
   }
 
   &__sub-paragraph {
     margin-bottom: 50px;
-
-    color: #000;
   }
 }

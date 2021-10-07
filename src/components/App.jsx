@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Mission from "./pages/Mission";
@@ -10,7 +15,7 @@ import Difference from "./pages/Difference";
 import PageNotFound from "./PageNotFound.jsx";
 
 const ROUTE_CONFIG = [
-  { id: 0, path: "/", content: About, linkValue: "About" },
+  { id: 0, path: "/about", content: About, linkValue: "About" },
   { id: 1, path: "/team", content: Team, linkValue: "Our Team" },
   { id: 2, path: "/mission", content: Mission, linkValue: "Mission" },
   { id: 3, path: "/slogan", content: Slogan, linkValue: "Slogan" },
@@ -33,9 +38,9 @@ const App = () => (
           const { id, path, linkValue } = config;
 
           return (
-            <Link to={path} className="nav__item" key={id}>
+            <NavLink to={path} className="nav__item" key={id}>
               {linkValue}
-            </Link>
+            </NavLink>
           );
         })}
       </ul>
