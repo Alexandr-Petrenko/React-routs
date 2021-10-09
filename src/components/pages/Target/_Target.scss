@@ -1,8 +1,9 @@
 .target {
-  height: calc(100vh - 100px);
+  height: auto;
+  min-height: calc(100vh - 100px);
 
   &__section-picture {
-    background: url("../../../images/target.png") no-repeat {
+    background: url("../../../images/target.png") no-repeat center top {
       size: cover;
     };
   }

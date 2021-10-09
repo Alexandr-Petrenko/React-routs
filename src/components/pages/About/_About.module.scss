@@ -1,5 +1,6 @@
 .about {
-  height: calc(100vh - 100px);
+  height: auto;
+  min-height: calc(100vh - 100px);
 
   &__section-main {
     position: relative;
