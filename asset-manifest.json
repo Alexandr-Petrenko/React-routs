@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-routs/static/css/main.2dc6160a.chunk.css",
+    "main.css": "/React-routs/static/css/main.771341a6.chunk.css",
     "main.js": "/React-routs/static/js/main.0c2c0a92.chunk.js",
     "main.js.map": "/React-routs/static/js/main.0c2c0a92.chunk.js.map",
     "runtime-main.js": "/React-routs/static/js/runtime-main.030b112d.js",
@@ -8,7 +8,7 @@
     "static/js/2.68365846.chunk.js": "/React-routs/static/js/2.68365846.chunk.js",
     "static/js/2.68365846.chunk.js.map": "/React-routs/static/js/2.68365846.chunk.js.map",
     "index.html": "/React-routs/index.html",
-    "static/css/main.2dc6160a.chunk.css.map": "/React-routs/static/css/main.2dc6160a.chunk.css.map",
+    "static/css/main.771341a6.chunk.css.map": "/React-routs/static/css/main.771341a6.chunk.css.map",
     "static/js/2.68365846.chunk.js.LICENSE.txt": "/React-routs/static/js/2.68365846.chunk.js.LICENSE.txt",
     "static/media/_Slogan.scss": "/React-routs/static/media/background-image.00d081d1.png",
     "static/media/_About.scss": "/React-routs/static/media/iphone.06c4f874.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.030b112d.js",
     "static/js/2.68365846.chunk.js",
-    "static/css/main.2dc6160a.chunk.css",
+    "static/css/main.771341a6.chunk.css",
     "static/js/main.0c2c0a92.chunk.js"
   ]
 }
