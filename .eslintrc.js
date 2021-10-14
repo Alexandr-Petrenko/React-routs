@@ -15,6 +15,7 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
+    "import/no-named-as-default": 0,
     quotes: ["error", "double"],
   },
 };

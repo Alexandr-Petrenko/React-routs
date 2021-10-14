@@ -2,8 +2,12 @@ import ReactDOM from "react-dom";
 import "./styles/reset.css";
 import "./styles/default.css";
 import "./styles/_atomic.scss";
-
-// eslint-disable-next-line no-unused-vars
 import App from "./components/App.jsx";
+import { ApiProvider } from "./providers/ApiProvider.jsx";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <ApiProvider>
+    <App />
+  </ApiProvider>,
+  document.getElementById("root")
+);

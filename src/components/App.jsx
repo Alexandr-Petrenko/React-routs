@@ -12,6 +12,7 @@ import Target from "./pages/Target";
 import Competitive from "./pages/Competitive";
 import Market from "./pages/Market";
 import Difference from "./pages/Difference";
+import Table from "./table";
 import PageNotFound from "./PageNotFound.jsx";
 
 const ROUTE_CONFIG = [
@@ -28,6 +29,7 @@ const ROUTE_CONFIG = [
   },
   { id: 6, path: "/market", content: Market, linkValue: "Market Strategy" },
   { id: 7, path: "/difference", content: Difference, linkValue: "Difference" },
+  { id: 8, path: "/table", content: Table, linkValue: "Table" },
 ];
 
 const App = () => (
