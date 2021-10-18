@@ -1,27 +1,27 @@
-import "./_Competitive.scss";
-import Info from "../../shared/Info";
+import './_Competitive.scss';
+import Info from '../../shared/Info';
 
-const titleContent = "The Competition";
+const titleContent = 'The Competition';
 const SUB_TEXT_CONTENT = [
   {
     id: 0,
-    title: "Product Manager",
-    paragraph: "List an appealing fact About your Target customer here.",
+    title: 'Product Manager',
+    paragraph: 'List an appealing fact About your Target customer here.',
   },
   {
     id: 1,
-    title: "$200k+ Income",
-    paragraph: "List an appealing fact About your Target customer here.",
+    title: '$200k+ Income',
+    paragraph: 'List an appealing fact About your Target customer here.',
   },
   {
     id: 2,
-    title: "Decision Maker",
-    paragraph: "List an appealing fact About your Target customer here.",
+    title: 'Decision Maker',
+    paragraph: 'List an appealing fact About your Target customer here.',
   },
   {
     id: 3,
-    title: "Metro Area",
-    paragraph: "List an appealing fact About your Target customer here.",
+    title: 'Metro Area',
+    paragraph: 'List an appealing fact About your Target customer here.',
   },
 ];
 

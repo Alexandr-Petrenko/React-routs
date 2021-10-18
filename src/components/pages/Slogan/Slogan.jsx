@@ -1,4 +1,4 @@
-import "./_Slogan.scss";
+import './_Slogan.scss';
 
 const Slogan = () => (
   <section className="slogan logo-light">

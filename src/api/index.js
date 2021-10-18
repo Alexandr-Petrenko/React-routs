@@ -1,13 +1,13 @@
-const axios = require("axios");
+const axios = require('axios');
 
 const limit = 15;
 const offset = 0;
 
 const apiData = axios.create({
-  baseURL: "https://api.teztracker.com/v2/data/tezos/mainnet/",
+  baseURL: 'https://api.teztracker.com/v2/data/tezos/mainnet/',
   withCredentials: false,
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
 });
 
@@ -18,6 +18,6 @@ const get = async (url) => {
   return data.slice(offset, limit);
 };
 
-const getBlocks = () => get("blocks");
+const getBlocks = () => get('blocks');
 
 export default getBlocks;

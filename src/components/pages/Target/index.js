@@ -1,3 +1,3 @@
-import Target from "./Target.jsx";
+import Target from './Target.jsx';
 
 export default Target;

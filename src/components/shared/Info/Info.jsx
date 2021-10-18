@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import "./_Info.scss";
-import SubText from "../SubText.jsx";
-import Title from "../Title";
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import './_Info.scss';
+import SubText from '../SubText.jsx';
+import Title from '../Title';
 
 const Info = ({
   content,
@@ -15,7 +15,7 @@ const Info = ({
 }) => (
   <>
     <Title content={tittleContent} className={titleClass} />
-    <div className={classNames("info column-double", className)}>
+    <div className={classNames('info column-double', className)}>
       {content.map((item) => {
         const { id, title, paragraph } = item;
 
@@ -45,11 +45,11 @@ Info.propTypes = {
 };
 
 Info.defaultProps = {
-  className: "",
-  titleClass: "",
-  containerClass: "",
-  subTitleClass: "",
-  subParagraphClass: "",
+  className: '',
+  titleClass: '',
+  containerClass: '',
+  subTitleClass: '',
+  subParagraphClass: '',
 };
 
 export default Info;

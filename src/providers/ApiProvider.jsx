@@ -1,6 +1,6 @@
-import { useContext, createContext, useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import getBlocks from "../api";
+import { useContext, createContext, useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import getBlocks from '../api';
 
 const ApiContext = createContext();
 export const useApi = () => useContext(ApiContext);
@@ -21,7 +21,7 @@ export const ApiProvider = ({ children }) => {
           return -1;
         }
         return 0;
-      })
+      }),
     );
   };
 

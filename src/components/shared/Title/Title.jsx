@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import "./_Title.scss";
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import './_Title.scss';
 
 const Title = ({ content, className }) => (
-  <h2 className={classNames("title", className)}>{content}</h2>
+  <h2 className={classNames('title', className)}>{content}</h2>
 );
 
 Title.propTypes = {
@@ -12,7 +12,7 @@ Title.propTypes = {
 };
 
 Title.defaultProps = {
-  className: "",
+  className: '',
 };
 
 export default Title;

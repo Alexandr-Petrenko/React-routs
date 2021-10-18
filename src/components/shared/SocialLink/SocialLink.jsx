@@ -1,9 +1,9 @@
-import classNames from "classnames";
-import PropTypes from "prop-types";
-import "./_SocialLink.scss";
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import './_SocialLink.scss';
 
 const SocialLink = ({ src, content, className, href }) => (
-  <div className={classNames("social-link", className)}>
+  <div className={classNames('social-link', className)}>
     <img
       src={process.env.PUBLIC_URL + src}
       alt={content}
@@ -28,7 +28,7 @@ SocialLink.propTypes = {
 };
 
 SocialLink.defaultProps = {
-  className: "",
+  className: '',
 };
 
 export default SocialLink;

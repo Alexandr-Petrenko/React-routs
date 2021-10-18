@@ -1,3 +1,3 @@
-import Competitive from "./Competitive.jsx";
+import Competitive from './Competitive.jsx';
 
 export default Competitive;

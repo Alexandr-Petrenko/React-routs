@@ -1,3 +1,3 @@
-import Benefit from "./Benefit.jsx";
+import Benefit from './Benefit.jsx';
 
 export default Benefit;

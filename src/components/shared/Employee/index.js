@@ -1,3 +1,3 @@
-import Employee from "./Employee.jsx";
+import Employee from './Employee.jsx';
 
 export default Employee;

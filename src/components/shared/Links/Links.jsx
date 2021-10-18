@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import SocialLink from "../SocialLink";
-import "./_Links.scss";
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import SocialLink from '../SocialLink';
+import './_Links.scss';
 
 const Links = ({ className, content, classForChild }) => (
-  <div className={classNames("links", className)}>
+  <div className={classNames('links', className)}>
     {content.map((item) => {
       const { linkSrc, linkHref, linkContent, id } = item;
 
@@ -28,8 +28,8 @@ Links.propTypes = {
 };
 
 Links.defaultProps = {
-  className: "",
-  classForChild: "",
+  className: '',
+  classForChild: '',
 };
 
 export default Links;

@@ -1,3 +1,3 @@
-import Market from "./Market.jsx";
+import Market from './Market.jsx';
 
 export default Market;

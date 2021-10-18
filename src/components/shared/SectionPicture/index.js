@@ -1,3 +1,3 @@
-import SectionPicture from "./SectionPicture.jsx";
+import SectionPicture from './SectionPicture.jsx';
 
 export default SectionPicture;

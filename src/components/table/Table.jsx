@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
-import { useApi } from "../../providers/ApiProvider.jsx";
-import "./_Table.scss";
+import { useEffect, useState } from 'react';
+import { useApi } from '../../providers/ApiProvider.jsx';
+import './_Table.scss';
 
 const Table = () => {
   const columnsNames = [
-    { id: 0, name: "Block ID", value: "level" },
-    { id: 1, name: "Baker", value: "bakerName" },
-    { id: 2, name: " Created", value: "timestamp" },
-    { id: 3, name: "# of operations", value: "number_of_operations" },
-    { id: 4, name: "Volume", value: "volume" },
-    { id: 5, name: "Fees", value: "fees" },
-    { id: 6, name: "Endorsements", value: "level" },
+    { id: 0, name: 'Block ID', value: 'level' },
+    { id: 1, name: 'Baker', value: 'bakerName' },
+    { id: 2, name: ' Created', value: 'timestamp' },
+    { id: 3, name: '# of operations', value: 'number_of_operations' },
+    { id: 4, name: 'Volume', value: 'volume' },
+    { id: 5, name: 'Fees', value: 'fees' },
+    { id: 6, name: 'Endorsements', value: 'level' },
   ];
   const { blocks, isLoading, sortDataBy, renderQuantity } = useApi([]);
   const [tableData, setTableData] = useState([]);
@@ -78,7 +78,7 @@ const Table = () => {
               return (
                 <tr key={level}>
                   <td>{level}</td>
-                  <td>{bakerName || "-----"}</td>
+                  <td>{bakerName || '-----'}</td>
                   <td>{timestamp}</td>
                   {/* eslint-disable-next-line camelcase */}
                   <td>{number_of_operations}</td>

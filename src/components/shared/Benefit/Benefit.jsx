@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import "./_Benefit.scss";
-import SubTitle from "../SubTitle";
-import SubParagraph from "../SubParagraph";
+import PropTypes from 'prop-types';
+import './_Benefit.scss';
+import SubTitle from '../SubTitle';
+import SubParagraph from '../SubParagraph';
 
 const Benefit = ({ src, subTitle, subParagraph }) => (
   <div className="benefit">

@@ -3,33 +3,33 @@ import {
   Switch,
   Route,
   NavLink,
-} from "react-router-dom";
-import About from "./pages/About";
-import Team from "./pages/Team";
-import Mission from "./pages/Mission";
-import Slogan from "./pages/Slogan";
-import Target from "./pages/Target";
-import Competitive from "./pages/Competitive";
-import Market from "./pages/Market";
-import Difference from "./pages/Difference";
-import Table from "./table";
-import PageNotFound from "./PageNotFound.jsx";
+} from 'react-router-dom';
+import About from './pages/About';
+import Team from './pages/Team';
+import Mission from './pages/Mission';
+import Slogan from './pages/Slogan';
+import Target from './pages/Target';
+import Competitive from './pages/Competitive';
+import Market from './pages/Market';
+import Difference from './pages/Difference';
+import Table from './table';
+import PageNotFound from './PageNotFound.jsx';
 
 const ROUTE_CONFIG = [
-  { id: 0, path: "/about", content: About, linkValue: "About" },
-  { id: 1, path: "/team", content: Team, linkValue: "Our Team" },
-  { id: 2, path: "/mission", content: Mission, linkValue: "Mission" },
-  { id: 3, path: "/slogan", content: Slogan, linkValue: "Slogan" },
-  { id: 4, path: "/target", content: Target, linkValue: "Target" },
+  { id: 0, path: '/about', content: About, linkValue: 'About' },
+  { id: 1, path: '/team', content: Team, linkValue: 'Our Team' },
+  { id: 2, path: '/mission', content: Mission, linkValue: 'Mission' },
+  { id: 3, path: '/slogan', content: Slogan, linkValue: 'Slogan' },
+  { id: 4, path: '/target', content: Target, linkValue: 'Target' },
   {
     id: 5,
-    path: "/competitive",
+    path: '/competitive',
     content: Competitive,
-    linkValue: "Competitive",
+    linkValue: 'Competitive',
   },
-  { id: 6, path: "/market", content: Market, linkValue: "Market Strategy" },
-  { id: 7, path: "/difference", content: Difference, linkValue: "Difference" },
-  { id: 8, path: "/table", content: Table, linkValue: "Table" },
+  { id: 6, path: '/market', content: Market, linkValue: 'Market Strategy' },
+  { id: 7, path: '/difference', content: Difference, linkValue: 'Difference' },
+  { id: 8, path: '/table', content: Table, linkValue: 'Table' },
 ];
 
 const App = () => (

@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import "./_Employee.scss";
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import './_Employee.scss';
 
 const Employee = ({ src, name, position, className }) => (
-  <div className={classNames("employee", className)}>
+  <div className={classNames('employee', className)}>
     <img
       src={process.env.PUBLIC_URL + src}
       alt={name}
@@ -24,7 +24,7 @@ Employee.propTypes = {
 };
 
 Employee.defaultProps = {
-  className: "",
+  className: '',
 };
 
 export default Employee;

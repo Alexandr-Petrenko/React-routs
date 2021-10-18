@@ -1,3 +1,3 @@
-import SocialLink from "./SocialLink.jsx";
+import SocialLink from './SocialLink.jsx';
 
 export default SocialLink;

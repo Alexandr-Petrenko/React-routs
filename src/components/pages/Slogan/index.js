@@ -1,3 +1,3 @@
-import Slogan from "./Slogan.jsx";
+import Slogan from './Slogan.jsx';
 
 export default Slogan;

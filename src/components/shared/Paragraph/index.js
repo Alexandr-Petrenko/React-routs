@@ -1,3 +1,3 @@
-import Paragraph from "./Paragraph.jsx";
+import Paragraph from './Paragraph.jsx';
 
 export default Paragraph;
