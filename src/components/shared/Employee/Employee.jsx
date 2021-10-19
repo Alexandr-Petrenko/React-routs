@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './_Employee.scss';
+import styles from './_Employee.module.scss';
+
+const { employee, employeePhoto, employeeText, employeeName } = styles;
 
 const Employee = ({ src, name, position, className }) => (
-  <div className={classNames('employee', className)}>
+  <div className={classNames(employee, className)}>
     <img
       src={process.env.PUBLIC_URL + src}
       alt={name}
-      className="employee__photo"
+      className={employeePhoto}
     />
-    <div className="employee__text">
-      <div className="employee__name">{name}</div>
+    <div className={employeeText}>
+      <div className={employeeName}>{name}</div>
       <div className="employee__position">{position}</div>
     </div>
   </div>

@@ -1,7 +1,8 @@
-import './_Target.scss';
+import classNames from 'classnames';
 import SectionPicture from '../../shared/SectionPicture';
 import SubTitle from '../../shared/SubTitle';
 import Info from '../../shared/Info';
+import styles from './_Target.module.scss';
 
 const titleContent = 'Target Customer';
 const subTitleContent = 'In this city alone, there are 1M product managers.';
@@ -28,16 +29,24 @@ const SUB_TEXT_CONTENT = [
   },
 ];
 
+const {
+  target,
+  targetSectionPicture,
+  targetSection,
+  targetTitle,
+  targetSubText,
+} = styles;
+
 const Target = () => (
-  <section className="target section-with-picture">
-    <SectionPicture className="target__section-picture" />
-    <div className="target__section logo">
+  <section className={classNames('section-with-picture', target)}>
+    <SectionPicture className={targetSectionPicture} />
+    <div className={classNames('logo', targetSection)}>
       <Info
         content={SUB_TEXT_CONTENT}
         tittleContent={titleContent}
-        titleClass="target__title"
-        subTitleClass="target__sub-title"
-        subParagraphClass="target__sub-text"
+        titleClass={targetTitle}
+        isDefault={true}
+        subParagraphClass={targetSubText}
       />
       <SubTitle content={subTitleContent} />
     </div>

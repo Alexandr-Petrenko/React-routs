@@ -42,7 +42,7 @@
     }
   }
 
-  &__info {
+  &Info {
     display: flex;
     flex-direction: column;
 
@@ -53,7 +53,7 @@
     }
   }
 
-  &__title {
+  &Title {
     position: relative;
     margin-bottom: 75px;
 
@@ -68,7 +68,7 @@
     }
   }
 
-  &__text {
+  &Text {
     @media (max-width: 1100px) {
       display: flex;
       flex-direction: column;
@@ -76,32 +76,7 @@
     }
   }
 
-  &__sub-title {
-    position: relative;
-    margin-bottom: 20px;
-
-    &:before {
-      position: absolute;
-      content: '';
-      display: block;
-      width: 70px;
-      height: 70px;
-      top: 0;
-      left: -120px;
-      background: url("../../../images/star.svg") no-repeat center;
-
-      @media (max-width: 1100px) {
-        top: -105px;
-        left: calc(50% - 70px / 2);
-      }
-    }
-
-    @media (max-width: 1100px) {
-      text-align: center;
-    }
-  }
-
-  &__sub-paragraph {
+  &SubParagraph {
     margin-bottom: 65px;
 
     font-weight: 500;

@@ -1,17 +1,19 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import './_SocialLink.scss';
+import styles from './_SocialLink.module.scss';
+
+const { socialLink, socialLinkImg, socialLinkAnchor } = styles;
 
 const SocialLink = ({ src, content, className, href }) => (
-  <div className={classNames('social-link', className)}>
+  <div className={classNames(socialLink, className)}>
     <img
       src={process.env.PUBLIC_URL + src}
       alt={content}
-      className="social-link__img"
+      className={socialLinkImg}
     />
     <a
       href={href}
-      className="social-link__anchor"
+      className={socialLinkAnchor}
       target="_blank"
       rel="noopener noreferrer"
     >

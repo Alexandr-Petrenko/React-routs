@@ -1,5 +1,6 @@
-import './_Market.scss';
+import classNames from 'classnames';
 import Info from '../../shared/Info';
+import styles from './_Market.module.scss';
 
 const titleContent = 'Marketing strategy';
 const SUB_TEXT_CONTENT = [
@@ -16,16 +17,19 @@ const SUB_TEXT_CONTENT = [
   },
 ];
 
+const { market, marketInfo, marketTitle, marketText, marketSubParagraph } =
+  styles;
+
 const Market = () => (
-  <section className="market logo">
+  <section className={classNames('logo', market)}>
     <Info
       tittleContent={titleContent}
       content={SUB_TEXT_CONTENT}
-      className="market__info"
-      titleClass="market__title"
-      subTitleClass="market__sub-title"
-      subParagraphClass="market__sub-paragraph"
-      containerClass="market__text"
+      className={marketInfo}
+      titleClass={marketTitle}
+      isRelative={true}
+      subParagraphClass={marketSubParagraph}
+      containerClass={marketText}
     />
   </section>
 );

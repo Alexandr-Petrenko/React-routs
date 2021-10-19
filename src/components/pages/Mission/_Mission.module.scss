@@ -1,12 +1,11 @@
 .mission {
-
-  &__section-picture {
+  &SectionPicture {
     background: url("../../../images/background-image.png") no-repeat center {
       size: cover;
     };
   }
 
-  &__main {
+  &Main {
     width: 60%;
 
     padding: 149px 5px 149px 75px;
@@ -17,19 +16,15 @@
     }
   }
 
-  &__sub-text {
+  &SubText {
     margin-bottom: 50px;
   }
 
-  &__title {
+  &Title {
     margin-bottom: 70px;
 
     @media (max-width: 1100px) {
       text-align: center;
     }
-  }
-
-  &__sub-title {
-    margin-bottom: 20px;
   }
 }

@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import About from './pages/About';
 import Team from './pages/Team';
 import Mission from './pages/Mission';
@@ -14,9 +9,10 @@ import Market from './pages/Market';
 import Difference from './pages/Difference';
 import Table from './table';
 import PageNotFound from './PageNotFound.jsx';
+import '../styles/_index.scss';
 
 const ROUTE_CONFIG = [
-  { id: 0, path: '/about', content: About, linkValue: 'About' },
+  { id: 0, path: '/', content: About, linkValue: 'About' },
   { id: 1, path: '/team', content: Team, linkValue: 'Our Team' },
   { id: 2, path: '/mission', content: Mission, linkValue: 'Mission' },
   { id: 3, path: '/slogan', content: Slogan, linkValue: 'Slogan' },
@@ -40,9 +36,9 @@ const App = () => (
           const { id, path, linkValue } = config;
 
           return (
-            <NavLink to={path} className="nav__item" key={id}>
+            <Link to={path} className="nav__item" key={id}>
               {linkValue}
-            </NavLink>
+            </Link>
           );
         })}
       </ul>

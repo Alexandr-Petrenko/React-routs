@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './_Info.scss';
 import SubText from '../SubText.jsx';
 import Title from '../Title';
+import styles from './_Info.module.scss';
+
+const { info } = styles;
 
 const Info = ({
   content,
@@ -10,12 +12,14 @@ const Info = ({
   tittleContent,
   containerClass,
   titleClass,
-  subTitleClass,
   subParagraphClass,
+  isDefault,
+  isCentered,
+  isRelative,
 }) => (
   <>
     <Title content={tittleContent} className={titleClass} />
-    <div className={classNames('info column-double', className)}>
+    <div className={classNames('column-double', className, info)}>
       {content.map((item) => {
         const { id, title, paragraph } = item;
 
@@ -23,9 +27,11 @@ const Info = ({
           <SubText
             text={paragraph}
             title={title}
-            titleClass={subTitleClass}
             paragraphClass={subParagraphClass}
             className={containerClass}
+            isDefault={isDefault}
+            isCentered={isCentered}
+            isRelative={isRelative}
             key={id}
           />
         );
@@ -42,6 +48,9 @@ Info.propTypes = {
   containerClass: PropTypes.string,
   subTitleClass: PropTypes.string,
   subParagraphClass: PropTypes.string,
+  isDefault: PropTypes.bool,
+  isCentered: PropTypes.bool,
+  isRelative: PropTypes.bool,
 };
 
 Info.defaultProps = {
@@ -50,6 +59,9 @@ Info.defaultProps = {
   containerClass: '',
   subTitleClass: '',
   subParagraphClass: '',
+  isDefault: false,
+  isCentered: false,
+  isRelative: false,
 };
 
 export default Info;

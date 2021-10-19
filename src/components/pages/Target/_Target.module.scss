@@ -2,13 +2,13 @@
   height: auto;
   min-height: calc(100vh - 100px);
 
-  &__section-picture {
+  &SectionPicture {
     background: url("../../../images/target.png") no-repeat center top {
       size: cover;
     };
   }
 
-  &__section {
+  &Section {
     width: 60%;
 
     padding: 149px 0 98px 75px;
@@ -23,16 +23,12 @@
     }
   }
 
-  &__title {
+  &Title {
     margin-bottom: 71px;
   }
 
-  &__sub-text {
+  &SubText {
     margin-bottom: 50px;
     max-width: 450px;
-  }
-
-  &__sub-title {
-    margin-bottom: 20px;
   }
 }

@@ -2,7 +2,7 @@
   height: auto;
   min-height: calc(100vh - 100px);
 
-  &__section-main {
+  &SectionMain {
     position: relative;
     padding: {
       top: 150px;
@@ -20,21 +20,21 @@
     }
   }
 
-  &__section-picture {
+  &SectionPicture {
     background: #2299ef url("../../../images/iphone.png") no-repeat center {
       size: contain;
     };
   }
 
-  &__title {
+  &Title {
     margin-bottom: 53px;
   }
 
-  &__paragraph {
+  &Paragraph {
     margin-bottom: 180px;
   }
 
-  &__social-link {
+  &SocialLink {
     margin: 0 60px 65px 0;
 
     @media (max-width: 1000px) {

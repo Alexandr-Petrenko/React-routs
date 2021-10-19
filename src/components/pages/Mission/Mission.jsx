@@ -1,7 +1,8 @@
-import './_Mission.scss';
+import classNames from 'classnames';
 import SectionPicture from '../../shared/SectionPicture';
 import Title from '../../shared/Title';
 import SubText from '../../shared/SubText.jsx';
+import styles from './_Mission.module.scss';
 
 const titleContent = 'Our Mission';
 const TEXT_DATA = [
@@ -9,7 +10,6 @@ const TEXT_DATA = [
     subtitle: 'Become the #1 Platform',
     paragraph:
       'There is an opportunity to become the go-to platform for product managers.',
-    titleClass: 'mission__sub-title',
     paragraphClass: 'mission__sub-paragraph',
     id: 0,
   },
@@ -17,7 +17,6 @@ const TEXT_DATA = [
     subtitle: 'Create a Great Community',
     paragraph: `We want to help others by creating a community 
                 where people can get answers to questions.`,
-    titleClass: 'mission__sub-title',
     paragraphClass: 'mission__sub-paragraph',
     id: 1,
   },
@@ -25,27 +24,34 @@ const TEXT_DATA = [
     subtitle: 'Lead by Example',
     paragraph:
       'Our goal is to become the industry leader by fostering great relationships.',
-    titleClass: 'mission__sub-title',
     paragraphClass: 'mission__sub-paragraph',
     id: 2,
   },
 ];
 
+const {
+  mission,
+  missionSectionPicture,
+  missionMain,
+  missionSubTex,
+  missionTitle,
+} = styles;
+
 const Mission = () => (
-  <section className="mission section-with-picture">
-    <SectionPicture className="mission__section-picture" />
-    <div className="mission__main logo">
-      <Title content={titleContent} className="mission__title" />
+  <section className={classNames('section-with-picture', mission)}>
+    <SectionPicture className={missionSectionPicture} />
+    <div className={classNames('logo', missionMain)}>
+      <Title content={titleContent} className={missionTitle} />
       {TEXT_DATA.map((data) => {
-        const { subtitle, paragraph, titleClass, paragraphClass, id } = data;
+        const { subtitle, paragraph, paragraphClass, id } = data;
 
         return (
           <SubText
             text={paragraph}
             title={subtitle}
-            titleClass={titleClass}
             paragraphClass={paragraphClass}
-            className="mission__sub-text"
+            className={missionSubTex}
+            isDefault={true}
             key={id}
           />
         );

@@ -1,6 +1,6 @@
 $square-size: 70px;
 
-.social-link {
+.socialLink {
   display: flex;
 
   @media (max-width: 1100px) {
@@ -14,7 +14,7 @@ $square-size: 70px;
     font-size: 35px;
   }
 
-  &__img {
+  &Img {
     display: block;
     width: $square-size;
     height: $square-size;
@@ -25,7 +25,7 @@ $square-size: 70px;
     }
   }
 
-  &__anchor {
+  &Anchor {
     transition: .5s;
 
     &:hover {

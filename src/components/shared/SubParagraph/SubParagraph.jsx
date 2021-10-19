@@ -1,9 +1,11 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import './_SubParagraph.scss';
+import styles from './_SubParagraph.module.scss';
+
+const { subParagraph } = styles;
 
 const SubParagraph = ({ content, className }) => (
-  <p className={classNames('sub-paragraph', className)}>{content}</p>
+  <p className={classNames(subParagraph, className)}>{content}</p>
 );
 
 SubParagraph.propTypes = {

@@ -31,7 +31,7 @@
     }
   }
 
-  &__info {
+  &Info {
     max-width: 60%;
 
     @media (max-width: 1100px) {
@@ -44,7 +44,7 @@
     }
   }
 
-  &__title {
+  &Title {
     margin-bottom: 70px;
 
     @media (max-width: 1100px) {
@@ -52,11 +52,7 @@
     }
   }
 
-  &__sub-title {
-    margin-bottom: 25px;
-  }
-
-  &__sub-paragraph {
+  &SubParagraph {
     margin-bottom: 50px;
   }
 }

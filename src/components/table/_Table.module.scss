@@ -1,4 +1,4 @@
-.scroll-table-body {
+.scrollTableBody {
   width: 804px;
   height: 300px;
   overflow-x: auto;
@@ -11,7 +11,7 @@
     height: auto;
   }
 }
-.scroll-table table {
+.scrollTable table {
   border-spacing: 0;
   width: 798px;
   table-layout: fixed;
@@ -21,7 +21,7 @@
     max-width: 798px;
   }
 }
-.scroll-table thead th {
+.scrollTable thead th {
   width: 103px;
   font-weight: bold;
   text-align: center;
@@ -40,7 +40,7 @@
     font-size: 5px;
   }
 }
-.scroll-table tbody td {
+.scrollTable tbody td {
   box-sizing: border-box;
   width: 114px;
   text-align: center;

@@ -3,7 +3,6 @@ import SectionPicture from '../../shared/SectionPicture';
 import Title from '../../shared/Title';
 import Paragraph from '../../shared/Paragraph';
 import Links from '../../shared/Links';
-import './_About.scss';
 import styles from './_About.module.scss';
 
 const title = 'Company Name';
@@ -30,19 +29,30 @@ const SOCIAL_LINKS = [
   },
 ];
 
-const About = () => (
-  <section className={classNames(styles.about, 'section-with-picture')}>
-    <SectionPicture className="about__section-picture" />
-    <div className="about__section-main logo">
-      <Title content={title} className="about__title" />
-      <Paragraph content={paragraph} className="about__paragraph" />
-      <Links
-        content={SOCIAL_LINKS}
-        classForChild="about__social-link"
-        className="about__links"
-      />
-    </div>
-  </section>
-);
+const About = () => {
+  const {
+    about,
+    aboutSectionPicture,
+    aboutSectionMain,
+    aboutTitle,
+    aboutParagraph,
+    aboutSocialLink,
+  } = styles;
+
+  return (
+    <section className={classNames(about, 'section-with-picture')}>
+      <SectionPicture className={aboutSectionPicture} />
+      <div className={aboutSectionMain}>
+        <Title content={title} className={aboutTitle} />
+        <Paragraph content={paragraph} className={aboutParagraph} />
+        <Links
+          content={SOCIAL_LINKS}
+          classForChild={aboutSocialLink}
+          className="about__links"
+        />
+      </div>
+    </section>
+  );
+};
 
 export default About;

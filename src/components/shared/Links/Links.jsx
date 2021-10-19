@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SocialLink from '../SocialLink';
-import './_Links.scss';
+import styles from './_Links.module.scss';
+
+const { links } = styles;
 
 const Links = ({ className, content, classForChild }) => (
-  <div className={classNames('links', className)}>
+  <div className={classNames(links, className)}>
     {content.map((item) => {
       const { linkSrc, linkHref, linkContent, id } = item;
 

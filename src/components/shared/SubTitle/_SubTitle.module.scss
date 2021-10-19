@@ -1,0 +1,45 @@
+%sub-heading-default {
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+
+  &Default {
+    @extend %sub-heading-default;
+  }
+
+  &DefaultRelative {
+    @extend %sub-heading-default;
+
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 70px;
+      height: 70px;
+      top: 0;
+      left: -120px;
+      background: url("../../../images/star.svg") no-repeat center;
+
+      @media (max-width: 1100px) {
+        top: -105px;
+        left: calc(50% - 70px / 2);
+      }
+
+      @media (max-width: 1100px) {
+        text-align: center;
+      }
+    }
+  }
+
+  &DefaultCentered {
+    @extend %sub-heading-default;
+
+    text-align: center;
+  }
+}

@@ -1,4 +1,4 @@
-.slogan {
+ .slogan {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
     size: cover;
   };
 
-  &__title {
+  &Title {
     max-width: 1105px;
     text-align: center;
     font-weight: 800;

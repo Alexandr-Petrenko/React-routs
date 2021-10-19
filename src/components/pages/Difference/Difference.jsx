@@ -1,6 +1,7 @@
-import './_Difference.scss';
+import classNames from 'classnames';
 import Title from '../../shared/Title';
 import Benefit from '../../shared/Benefit';
+import styles from './_Difference.module.scss';
 
 const BENEFIT_CONTENT = [
   {
@@ -23,10 +24,12 @@ const BENEFIT_CONTENT = [
   },
 ];
 
+const { difference, differenceTitle, differenceWrapper } = styles;
+
 const Difference = () => (
-  <section className="difference logo">
-    <Title content="What makes us different?" className="difference__title" />
-    <div className="difference__wrapper">
+  <section className={classNames('logo', difference)}>
+    <Title content="What makes us different?" className={differenceTitle} />
+    <div className={differenceWrapper}>
       {BENEFIT_CONTENT.map((item) => {
         const { id, subTitle, subParagraph, url } = item;
 
@@ -36,7 +39,6 @@ const Difference = () => (
             subParagraph={subParagraph}
             subTitle={subTitle}
             imgClassName="difference__img"
-            subTitleClass="difference__sub-title"
             subParagraphClass="difference__sub-paragraph"
             key={id}
           />

@@ -18,7 +18,7 @@ const WORKERS_LIST = [
 const Team = () => (
   <section className="team logo">
     <div className="team__text">
-      <Title content={title} className="team__title" />
+      <Title content={title} className="sub-title--default" />
       <SubParagraph content={paragraph} />
     </div>
     <div className="team__employee column-double">

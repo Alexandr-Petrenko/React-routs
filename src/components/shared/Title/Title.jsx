@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import './_Title.scss';
+import styles from './_Title.module.scss';
+
+const { title } = styles;
 
 const Title = ({ content, className }) => (
-  <h2 className={classNames('title', className)}>{content}</h2>
+  <h2 className={classNames(title, className)}>{content}</h2>
 );
 
 Title.propTypes = {
