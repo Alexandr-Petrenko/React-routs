@@ -42,7 +42,7 @@ const About = () => {
   return (
     <section className={classNames(about, 'section-with-picture')}>
       <SectionPicture className={aboutSectionPicture} />
-      <div className={aboutSectionMain}>
+      <div className={classNames(aboutSectionMain, 'logo')}>
         <Title content={title} className={aboutTitle} />
         <Paragraph content={paragraph} className={aboutParagraph} />
         <Links

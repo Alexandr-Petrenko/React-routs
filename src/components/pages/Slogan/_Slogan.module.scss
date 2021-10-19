@@ -1,4 +1,6 @@
- .slogan {
+@import "/src/styles/mixins";
+
+.slogan {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +21,7 @@
     color: #FCF7F7;
     text-shadow: 0 0 4px #73777A;
 
-    @media (max-width: 1100px) {
+    @include media() {
       font-size: 50px;
     }
   }

@@ -1,3 +1,5 @@
+@import "/src/styles/mixins";
+
 .target {
   height: auto;
   min-height: calc(100vh - 100px);
@@ -13,7 +15,7 @@
 
     padding: 149px 0 98px 75px;
 
-    @media (max-width: 1100px) {
+    @include media() {
       display: flex;
       flex-direction: column;
       width: 100%;

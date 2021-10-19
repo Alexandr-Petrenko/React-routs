@@ -33,7 +33,7 @@ const {
   mission,
   missionSectionPicture,
   missionMain,
-  missionSubTex,
+  missionSubText,
   missionTitle,
 } = styles;
 
@@ -50,7 +50,7 @@ const Mission = () => (
             text={paragraph}
             title={subtitle}
             paragraphClass={paragraphClass}
-            className={missionSubTex}
+            className={missionSubText}
             isDefault={true}
             key={id}
           />

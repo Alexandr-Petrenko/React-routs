@@ -1,5 +1,7 @@
+@import "/src/styles/mixins";
+
 .paragraph {
-  @media (max-width: 499px) {
+  @include media(499px) {
     font-size: 25px;
   }
 }
